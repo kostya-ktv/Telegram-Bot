@@ -15,7 +15,7 @@ public class LibraryMessageHandler implements MessageHandler {
     @Override
     public String reply() {
         return "Чтобы получить информацию об игре, которая уже находится в библиотеке бота, " +
-                "введите её полное название после команды через пробел: \n\n/library Oddmar" +
+                "введите её полное название после команды через пробел: \n\n/library LIMBO" +
                 "\n\nНазвание должно соответствовать названию игры в магазине Google Play (поиск не чувствителен к регистру)." +
                 "\n\nКоличество игр в библиотеке: " + LibraryService.getLibrary().size() +
                 "\n\nСлучайные игры из библиотеки:\n\n" + getRandomTitles();

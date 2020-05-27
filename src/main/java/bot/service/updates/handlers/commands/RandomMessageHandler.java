@@ -12,7 +12,7 @@ public class RandomMessageHandler implements MessageHandler {
         return getRandomGame().toString();
     }
 
-    private GooglePlayGame getRandomGame(){
+    public GooglePlayGame getRandomGame(){
         Object [] values = LibraryService.getLibrary().values().toArray();
         return (GooglePlayGame) values[new Random().nextInt(values.length)];
     }

@@ -32,7 +32,7 @@ public class TextMessageHandler {
             replyGenerator.sendTextMessage(chat_id, new GameMessageHandler().reply());
         }
         else if (message.equals(ChatCommands.RANDOM.getDescription())) {
-            replyGenerator.sendTextMessage(chat_id, new RandomMessageHandler().reply());
+            replyGenerator.sendMessageWithPicture(chat_id, new RandomMessageHandler().getRandomGame());
         }
         else if (message.equals(ChatCommands.CONTACTS.getDescription())
                 || message.equalsIgnoreCase("Исходный код проекта")) {
